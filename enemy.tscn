@@ -3,12 +3,14 @@
 [ext_resource type="Texture2D" uid="uid://clwpo83yorvtm" path="res://assets/enemy.png" id="1_i1ubn"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_12f8g"]
-radius = 321.0
-height = 986.0
+radius = 83.5111
+height = 248.614
 
 [node name="Enemy" type="RigidBody2D"]
+gravity_scale = 2.66454e-15
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
 texture = ExtResource("1_i1ubn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
